@@ -1,6 +1,5 @@
 body{
     display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -14,7 +13,27 @@ form{
 
 form div{
     padding: 20px;}
-#EmailBox{
+#tab{
+display: flex;
+justify-content: space-between;
+}
+#blocks{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+#Login, #signUp{
+padding: 10px;
+background-color: rgba(243, 235, 225,0.2);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgb(243, 235, 225);
+
+border-radius:  20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+#EmailBox,#NameBox{
     margin-left: 23px;
 }
 
@@ -31,11 +50,14 @@ form div{
     margin-bottom: -20px;
     width: 200px;
 }
-#Password{
+#Password,#Email{
     margin-top: -15px;
 }
 .success{
     margin-top: 20px;
+}
+#ask{
+    margin: -10px;
 }
 #Submit{
     margin-top: 10px;
