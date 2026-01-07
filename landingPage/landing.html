@@ -11,53 +11,65 @@
         <div id="Name">APPLE</div>
         <button>Login</button>
     </header>
-    <div id="signUp">
-        <header id="header">
-            <h1 id="head">User Login</h1>
-        </header>
-        <main>
-            <div class="info" >
-                <form id = 'Auth' method = "post" novalidate>
-                    <div id="Email">
-                        <label for="EmailBox">Email:</label>
-                        <input id="EmailBox"  type="email" placeholder="Example@gmail.com">
-                        <div class = "error" id="emailError">Invalid Email</div>
-                    </div>
-                    <div id="Password">
-                        <label for="passwordBox">Password:</label>
-                        <input id="PasswordBox" type="password" placeholder="********">
-                        <div class = "error" id="passwordError">Invalid Password</div>
-                    </div>
-                    <button type="Submit" id = "Submit">Submit</button>
-                </form>
-                <div id="success">Login Successful</div>
-            </div>
-        </main>
-    </div>
-    <div  id="Login">
-        <header id="header">
-        <h1 id="head">User Login</h1>
-        </header>
-        <main>
-            <div class="info" >
-                <form id = 'Auth' method = "post" novalidate>
-                    <div id="Email">
-                        <label for="EmailBox">Email:</label>
-                        <input id="EmailBox"  type="email" placeholder="Example@gmail.com">
-                        <div class = "error" id="emailError">Invalid Email</div>
-                    </div>
-                    <div id="Password">
-                        <label for="passwordBox">Password:</label>
-                        <input id="PasswordBox" type="password" placeholder="********">
-                        <div class = "error" id="passwordError">Invalid Password</div>
-                    </div>
-                    <button type="Submit" id = "Submit">Submit</button>
-                </form>
-                <div id="success">Login Successful</div>
-            </div>
-        </main>
-    </div>
-    
+    <div id="blocks">
+        <div id="signUp">
+            <header id="header">
+                <h1 id="head">Sign Up</h1>
+            </header>
+            <main>
+                <div class="info" >
+                    <form id = 'Auth' method = "post" novalidate>
+                        <div id="Name">
+                            <label for="NameBox">Name:</label>
+                            <input id="NameBox"  type="text" placeholder="FullName">
+                            <div class = "error" id="NameError">Invalid Name</div>
+                        </div>
+                        <div id="Email">
+                            <label for="EmailBox">Email:</label>
+                            <input id="EmailBox"  type="email" placeholder="Example@gmail.com">
+                            <div class = "error" id="emailError">Invalid Email</div>
+                        </div>
+                        <div id="Password">
+                            <label for="passwordBox">Password:</label>
+                            <input id="PasswordBox" type="password" placeholder="********">
+                            <div class = "error" id="passwordError">Invalid Password</div>
+                        </div>
+                        <div id="ask">
+                            Have an account? <a href="">Login</a>
+                        </div>
+                        <button type="Submit" id = "Submit">SignUp</button>
+                    </form>
+                    <div id="success">Login Successful</div>
+                </div>
+            </main>
+        </div>
+        <div  id="Login">
+            <header id="header">
+            <h1 id="head">Login</h1>
+            </header>
+            <main>
+                <div class="info" >
+                    <form id = 'Auth' method = "post" novalidate>
+                        <div id="Email">
+                            <label for="EmailBox">Email:</label>
+                            <input id="EmailBox"  type="email" placeholder="Example@gmail.com">
+                            <div class = "error" id="emailError">Invalid Email</div>
+                        </div>
+                        <div id="Password">
+                            <label for="passwordBox">Password:</label>
+                            <input id="PasswordBox" type="password" placeholder="********">
+                            <div class = "error" id="passwordError">Invalid Password</div>
+                        </div>
+                        <div id="ask">
+                            Don't have an account? <a href="">SignUp</a>
+                        </div>
+                        <button type="Submit" id = "Submit">Login</button>
+                    </form>
+                    <div id="success">Login Successful</div>
+                </div>
+            </main>
+        </div>
+    </div>    
 </body>
 <script src="landing.js"></script>
 </html>
